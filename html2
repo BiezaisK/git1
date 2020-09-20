@@ -12,6 +12,6 @@
 <body>
     <button onclick="hello('Biezais')">Say hello!</button>
 
-    <script src="js/main.js"></script>
+    <scriptsrc="js/main.js"></script>
 </body>
 </html>
