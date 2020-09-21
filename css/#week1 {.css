@@ -1,0 +1,21 @@
+#week1 {
+    color: red;
+}
+table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+button {
+    color: gray;
+}
+
+#th {
+    color: hotpink;
+}
+
+body {
+    background-color:rgb(110, 5, 5);
+font-family:  sans-serif;
+
+}
