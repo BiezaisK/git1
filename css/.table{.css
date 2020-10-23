@@ -1,0 +1,143 @@
+body {
+    background-color:white;
+font-family:  sans-serif;
+
+}
+
+
+
+.table{
+    border-collapse: collapse;
+
+}
+
+.tdgreen{
+    color:green
+}
+
+    #heading1 {
+        columns: rgba(255,255,255, .5);
+    }
+
+
+
+    #button {
+        width: 80px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 29px;
+        text-align: center;
+        background-color:rgb(59, 156, 21);
+        color: white;
+        border: 1px solid blue;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px gray;
+        margin: 5px;
+        margin-bottom: 50px;
+        /*opacity: .5;*/
+        user-select: none;
+        cursor: alias;
+    }
+
+    #table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+#button:hover{
+    background-color: green;
+}
+
+#button:active{
+    background-color: green;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+#table1 td{
+    text-align: center;
+}
+
+#table1 tbody tr:nth-child(even){
+    background-color: #ddd;
+}
+
+#table1 td+td{
+    color: grey;
+}
+
+#table1 td{
+    color: green;
+}
+
+#table1 th{
+    color: green;
+}
+
+#table1 tbody p+span{
+    color: black;
+}
+
+#table1 span~p{
+    color: red;
+}
+
+#table1 p~span{
+    color: red;
+}
+
+#table1 p+span{
+    color: black;
+}
+
+.klucitis{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #aac;
+    border: 1px solid red;
+    margin: auto
+}
+
+#klucitis{
+    background-color: #777;
+    padding: 20px; 0
+}
+
+
+input{
+    outline: none;
+}
+
+
+//
+/**/ css komentari
+<!... ...> HTML komentari
+/*  */ CTRL + /
+
+
+
+    /*table2 {
+        border collapse: colapse;
+} */
+
+/*
+reset css
+
+user-agent
+*/
+ /*
+Krāsas
+color -- fonta krāsa
+background color -- fona krāsa
+border -- rāmja krāsa
+box-shadow -- ēna
+
+aliceblue, grey,
+RGB -- #ffffff; 
+HEX 0, 1, 2, 3, 4. 5. 6. 7. 8. 9. A. B. C. D. E. F;
+16*16=256
+#ffffff;
+rgb(255.255.255)
+rgba(255.255.255 .5)
+HSL(): Hue, Saturation; Lightness
+HSLA()
+*/

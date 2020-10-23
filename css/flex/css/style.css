@@ -1,0 +1,35 @@
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    text-align: right;
+}
+
+
+
+#section1{
+    display: flex;
+    
+}
+
+#section1 div:first-child{
+    flex: 0 0 20%;
+}
+#section1 div:last-child{
+    flex: 0 0 30%;
+}
+#section1 div:nth-child(2){
+    background-color: cyan;
+}
+
+
+@media screen and (max-width: 600px) {
+    #section1{
+        flex-direction: row;
+    }
+}

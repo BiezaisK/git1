@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/index.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script> 
+    
+   <title>Tabula 2222</title> 
+</head> 
+<body> 
+    <form id="user-form" novalidate>
+      <div class="input-wrapper">
+        <label>
+          Username:
+          <input name="username">
+        </label>
+        <div class="error-msg username"></div>
+      </div>
+      <div class="input-wrapper">
+        <label>
+          Email:
+          <input type="email" name="email">
+        </label>
+        <div class="error-msg email"></div>
+      </div>
+      <input type="hidden" name="user-id">
+        <button type="button" id="save-btn">Save</button>
+    </form>
+
+    <table id="users-table">
+
+      <td>Username</td>
+
+      <td>Email</td>
+
+    </table>
+
+<button class="Edit-btn">Edit</button>
+<button class="Delete-btn">Delete</button>
+
+</body> 
+</html> 
