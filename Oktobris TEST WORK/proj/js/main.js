@@ -1,4 +1,4 @@
-document.getElementById('saveName').addEventListener('click', function(){ 
+document.getElementById('save-btn').addEventListener('click', function(){ 
     const nameInput = document.getElementsByClassName('name')[0];
     console.log(nameInput.value);
   

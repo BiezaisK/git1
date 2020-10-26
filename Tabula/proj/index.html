@@ -4,58 +4,27 @@
    <meta charset="utf-8"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="css/style.css"> 
-   <script src="/js/main.js"></script>
    <title>Tabula ar vardiem</title>
-</head> 
-<body> 
-   <label>
-
-    Name:
-
-    <input class="name">
-
-   </label>
-<button id="saveName">Saglabat vardu</button>
-
-<table class="userTable">
-
-
-</table>
-  <script>
+  </head> 
+  <body> 
+    <label>
+      
+      Name:
+      
+      <input class="name">
+      
+    </label>
+    <button id="saveName">Saglabat vardu</button>
     
-document.getElementById('saveName').addEventListener('click', function(){ 
-  const nameInput = document.getElementsByClassName('name')[0];
-  console.log(nameInput.value);
-
-let users = localStorage.users;
-
-if (users) {
-  users = users.split(",")
-  users.push(nameInput.value);
-
-} else{
-  console.log("no users")
-  users = [];
-  users.push(nameInput.value);
-  console.log(users);
-  
-}
-
-localStorage.users = users.toString();
-renderTable();
-});
-function renderTable(){
-  table = document.getElementsByClassName('userTable')[0];
-  table.innerHTML = '';
-
-  const usersArray = localStorage.users.split(",");
-
-  usersArray.forEach(function(name){
-table.innerHTML += "<tr><td>"+ name + "</td></tr>";
-  })
-}
-
-
+    <table class="userTable">
+      
+      
+    </table>
+    <script>
+      
+      
+      
+      <script src="/js/main.js"></script>
   </script>
 
 </body> 

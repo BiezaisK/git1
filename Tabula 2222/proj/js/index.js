@@ -5,7 +5,7 @@ $(function (){
 
             console.log(formData);
         
-        // if (isFormValid(form)) {
+        if (isFormValid(form)) {
             let userList = localStorage.userList;
         
             if (userList) {
@@ -22,20 +22,20 @@ $(function (){
                 
             };
 
-            const userId = formData.find((row) => row.name === 'user-id'). value
+            const userId = formData.find((row) =>row.name === ' user-id').value;
         
             userList.push(JSON.stringify(user));
             localStorage.userList = JSON.stringify(userList);
             
             console.log('can be saved')
             renderTable();
-        // } else {
+        } else {
             console.log('form not valid')
         }
         
-        // function isFormValid(form){
+        function isFormValid(form){
         
-        // }
+        }
         
         
         });
@@ -52,7 +52,7 @@ $(function (){
 
             if (username.lenght < 6) {
                 const errorMsg = document.getElementsByClassName('error-msg username') 
-                errorMsg.innerHTML = "min 6 characters for username";
+                errorMsg.innerHTML = ("min 6 characters for username");
                 isFormValid = false;
             }
             
@@ -70,10 +70,24 @@ $(function (){
         function renderTable(){
         
             const table = document.getElementById('users-table');
-            const userList = localStorage.userList ? JSON.parse(localStorage.userList) : []
+            const userList = localStorage.userList ? JSON.parse(localStorage.userList) : [];
+
+            const $trExample = $('.tr-exapmle');
+            $tBody.html('');
+            console.trace(user);
         
-            userList.forEach(function(user){
+            userList.forEach(function(user, index){
+                user = JSON.parse(user);
+
+                const $newTr = $trExample.first().clone().show();
                 user = JSON.parse(user)
+                console.log($newTr.find('username'));
+
+                $newTr.find('.username').text(user.username);
+                $newTr.find('.email').text(user.email);
+                $newTr.find('.edit-btn').attr('user-id',index);
+                $newTr.find('.delete-btn').attr('user-id',index);
+
                 table.innerHTML += `
                 <tr>
                 <td>` +user.username+`</td>
