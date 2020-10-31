@@ -1,54 +1,63 @@
-
-
-.input-wrapper{
-    max-width: 200px;
-    max-height: 100px;
+body > table{
+    width: 80%;
 }
 
-#save-btn{
-    color: gold;
-    background-color: red;
-    float: ;
-
+table{
+    border-collapse: collapse;
 }
 
-
-input{
+table.list{
     width: 100%;
-    /* max-width: 300px; */
-    /* diplays: block: */
-border: 1px solid gray;
-border-radius: 4px;
-height: 30px;
-padding-left: 5px;
-padding-right: 5px;
-outline: none;
 }
 
-.error-msg{
-    height: 12px;
-   font-size: 10px;
-   color: red;
-
+td, th{
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
-.checkbox{
-    float: left;
-    width: 15px;
-    height: 15px;
-
+tr:nth-child(even),table.list thead>tr{
+    background-color: #dddddd;
 }
 
-.table{
-    border-radius: 10px;
-    border-color: green;
-    border-collapse: collapse;
-    margin: 10px;
-    
+input[type=text], input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-table,th, td {
-    border: 1px solid rgb(236, 234, 234);
-    border-collapse: collapse;
-    border-width: 1px;
-    border-color: green;
+
+input[type=submit]{
+    width: 30%;
+    background-color: #dddddd;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    margin: 5px;
+    color:black;
+    text-decoration: underline black;
+    margin-right: 1px;
+}
+
+label.validation-error{
+    color: red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
 }
