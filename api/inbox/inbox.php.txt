@@ -1,1 +1,0 @@
-{"weather":{"currTemp":15.8,"windDir":"NE","windSpeed":2.1,"icoSymbol":"LightCloud"},"geoip":{"country_name":"Latvia","region":"Riga","city":"Riga","latitude":56.9496,"longitude":24.0978}}
